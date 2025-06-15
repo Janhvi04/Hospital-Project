@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+<p>Email: {{ user.email }}</p>
+<p>Address: {{ user.address_line1 }}, {{ user.city }}, {{ user.state }} - {{ user.pincode }}</p>
+{% if user.profile_pic %}
+    <img src="{{ user.profile_pic.url }}" width="100">
+{% endif %}
